@@ -21,5 +21,11 @@ library(Hmisc)
 mydata<-sasxport.get(“c:/mydata.xpt”)
 
 3. How to read Weka Attribute-Relation File Format (ARFF) files in R?
+library(RWeka)
+
+read.arff(system.file("arff", "contact-lenses.arff",
+                      package = "RWeka"))
+
 
 4. How to read a heavy csv/tsv file using readr package?
+RBI<- read.csv("C:/Users/Savitha/Desktop/R Studio/Files/RBIdata.csv")
