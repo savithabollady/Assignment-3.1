@@ -1,4 +1,5 @@
 1. How to Import SAS XPORT files into R with the foreign package?
+
 library(foreign)
 write.foreign(mydata, “c:/mydata.txt”,
 “c:/mydata.sas”, package=”SAS”)
