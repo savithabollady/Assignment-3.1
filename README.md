@@ -29,4 +29,12 @@ read.arff(system.file("arff", "contact-lenses.arff",
 
 
 4. How to read a heavy csv/tsv file using readr package?
-RBI<- read.csv("C:/Users/Savitha/Desktop/R Studio/Files/RBIdata.csv")
+install.packages("readr") # installing readr package
+
+library(readr) # loading the package 
+
+read_csv(file, col_names = TRUE)  # Read comma (",") separated values
+
+read_csv2(file, col_names = TRUE)  # Read semicolon (";") separated values
+
+read_tsv(file, col_names = TRUE)  # Read tab separated values 
